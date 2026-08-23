@@ -115,7 +115,7 @@ h2 { margin: 7px 0 0; font-size: clamp(2.55rem, 5vw, 4.45rem); line-height: .95;
 
 .route-list { border-top: 1px solid var(--line); }
 .route-stop { display: grid; grid-template-columns: 92px 1fr 115px; gap: 25px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
-.route-stop.featured-stop { margin: 0 -20px; padding: 22px 20px; background: #e9e4d9; }
+.route-stop.featured-stop { margin: 0 -20px; padding: 22px 20px; background: transparent; }
 .stop-time { color: var(--coral); font-family: var(--serif); font-size: 1.25rem; }
 .route-stop h3 { margin: 4px 0 5px; font-family: var(--serif); font-size: 1.55rem; font-weight: 500; letter-spacing: -.03em; }
 .route-stop p:not(.eyebrow) { margin: 0; color: var(--muted); font-size: .81rem; }
