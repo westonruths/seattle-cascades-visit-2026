@@ -49,7 +49,7 @@ h1 em { color: #f8d879; font-style: italic; }
 .visit-strip { position: relative; z-index: 4; display: grid; grid-template-columns: repeat(5, 1fr); margin-top: -1px; border: 1px solid var(--line); border-top: 0; background: var(--cream); box-shadow: var(--shadow); }
 .visit-strip > div { min-height: 112px; padding: 22px 20px; }
 .visit-strip > div + div { border-left: 1px solid var(--line); }
-.visit-strip .flex-day { background: #eef4ef; box-shadow: inset 0 3px 0 var(--moss); }
+.visit-strip .flex-day { background: transparent; box-shadow: none; }
 .visit-strip span, .cost-strip span { display: block; color: var(--coral); font-size: .65rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
 .visit-strip strong, .visit-strip small { display: block; }
 .visit-strip strong { margin: 6px 0 3px; font-family: var(--serif); font-size: 1.08rem; font-weight: 600; }
