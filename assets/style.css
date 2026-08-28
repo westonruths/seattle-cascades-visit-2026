@@ -139,6 +139,14 @@ h2 { margin: 7px 0 0; font-size: clamp(2.55rem, 5vw, 4.45rem); line-height: .95;
 .safety-gate strong { font-family: var(--serif); font-size: 1.13rem; font-weight: 600; }
 .safety-gate p { max-width: 780px; margin: 4px 0 0; color: #6b5d51; font-size: .78rem; }
 .safety-gate > a { flex: none; color: var(--pine); font-size: .75rem; font-weight: 850; text-decoration: none; }
+.weather-strip { display: grid; grid-template-columns: minmax(190px, .7fr) 1.7fr; gap: 28px; align-items: start; margin: 0 0 70px; padding: 26px; border: 1px solid var(--line); background: #e6eee9; }
+.weather-strip h2 { margin: 6px 0 0; font-family: var(--serif); font-size: 1.8rem; font-weight: 500; letter-spacing: -.035em; }
+.weather-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.weather-grid article { display: flex; flex-direction: column; gap: 8px; padding: 15px; border: 1px solid rgba(32,60,53,.14); background: rgba(255,255,255,.42); }
+.weather-grid article strong { color: var(--pine); font-size: .78rem; }
+.weather-grid article span { color: var(--muted); font-size: .73rem; line-height: 1.45; }
+.weather-grid .weather-best { border: 2px solid var(--pine); background: #fffdf7; }
+.weather-note { grid-column: 2; margin: 0; color: var(--muted); font-size: .76rem; line-height: 1.55; }
 
 .ready-section { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; border-top: 1px solid var(--line); }
 .ready-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
@@ -197,6 +205,9 @@ footer { padding: 26px 0 38px; border-top: 1px solid var(--line); color: var(--m
   .route-stop.featured-stop { margin: 0 -15px; padding: 18px 15px; }
   .cost-strip > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .safety-gate { align-items: flex-start; flex-direction: column; }
+  .weather-strip { grid-template-columns: 1fr; }
+  .weather-note { grid-column: 1; }
+  .weather-grid { grid-template-columns: 1fr; }
   .ready-list li { grid-template-columns: 38px 1fr; }
   .footer-inner { display: block; }
   .footer-inner p + p { margin-top: 7px; }
