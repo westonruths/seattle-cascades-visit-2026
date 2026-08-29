@@ -187,8 +187,9 @@ footer { padding: 26px 0 38px; border-top: 1px solid var(--line); color: var(--m
 
 @media (max-width: 680px) {
   .shell { width: min(100% - 30px, 540px); }
-  .header-inner { min-height: 58px; gap: 12px; }
-  .header-inner nav { display: none; }
+  .header-inner { min-height: 58px; gap: 12px; flex-wrap: wrap; padding: 8px 0 0; }
+  .header-inner nav { display: flex; order: 3; width: 100%; margin: 0; gap: 18px; overflow-x: auto; padding-bottom: 2px; white-space: nowrap; }
+  .header-inner nav a { display: inline-flex; align-items: center; min-height: 44px; }
   .date-chip { margin-left: auto; font-size: .69rem; }
   .hero { min-height: 560px; }
   .hero > img { object-position: 58% center; }
